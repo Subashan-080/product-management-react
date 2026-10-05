@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+     text-decoration: none;
+}
+    
+
+header > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header > ul > li{
+    list-style: none;
+   
+    & a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+/* sign up */
+.mainsignup{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding-top: 10rem;
+   height: 100vh;
+   width: 100%;
+   background-image: url(https://images.openai.com/static-rsc-4/6ybSvAxrPIgqI24MMkMyn8Yfc57UJcD7QC35sDbyMzqZna77uB_nMLgv70da2NXqJEgr6gTutZnwzji1TVxFiWhUldHVXGOjz8cIYaMsXonJJaNdCEr3Ve2dE8FUGTRIFkpBx1KT-cOMxBXJ49JwBb4Zj7ZOGrEsNDBgp7gQNY0eUD29EGalKL-9UWiUh6i8?purpose=fullsize);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 2rem;
+}
+
+
+.signup{
+    border: 2px solid red;    
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: #0D0D0D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 1rem;
+   transform: translateX(-30px);
+   transform: translateY(-50px);
+    border: 1px solid rgba(216, 27, 120, 0.3); 
+    border-color: #D81B78; 
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(216, 27, 120, 0.7), 0 0 30px rgba(216, 27, 120, 0.5), 0 0 60px rgba(216, 27, 120, 0.3); 
+    & label{
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+    }
+      
+   
+
+    & input{
+    height: 40px;
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+    padding-left: 5px;
+     box-shadow: 0 0 6px rgba(180, 180, 180, 0.4), 0 0 15px rgba(180, 180, 180, 0.2); 
+    }
+
+    & button{
+    height: 35px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D81B78; 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 400;
+    transform: translateX(90px);
+    &:hover {
+    background: #E91E8C;
+    box-shadow: 0 0 15px rgba(233, 30, 140, 0.6);
+    }
+    }
+
+}
+
