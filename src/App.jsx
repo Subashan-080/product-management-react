@@ -5,6 +5,7 @@ import Home from './Home'
 import Product from './Product'
 import User from './User'
 import SignUP from './SignUP'
+import { Toaster } from 'react-hot-toast'
 let myrouter=createBrowserRouter([{
   path:"",
   element:<Nav></Nav>,
@@ -31,6 +32,7 @@ let myrouter=createBrowserRouter([{
 const App = () => {
   return (
     <div>
+    <Toaster position='top-right'></Toaster>
     <RouterProvider router={myrouter}></RouterProvider>
     </div>
   )

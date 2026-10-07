@@ -6,7 +6,8 @@ const SignUP = () => {
 
 let [state,setstate] = useState(
   { name:"",
-    email:""
+    email:"",
+    avatar:""
 })
 function handleChange(e){
   let{name,value}=e.target
@@ -22,15 +23,14 @@ async function handleSubmit(e){
         if(!state[key]){
           toast.error(`${key} is required`)
         isError=true
-        }
-       
+        } 
       }
 
       if(!isError){
       let myres=  await axios.post("https://6a671da5189fe5869eb6ff31.mockapi.io/allusers",state)
       if(myres.status==201){
         toast.success("data created sucessfully")
-        setstate({name:"",email:""})
+        setstate({name:"",email:"",avatar:""})
       }
       }
 
@@ -45,9 +45,11 @@ async function handleSubmit(e){
     <div className='signup'>
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Name:</label>
-        <input type="text" placeholder='enter your name'  name="name" onChange={handleChange} value={state.value}/><br /><br />
+        <input type="text" placeholder='enter your name'  name="name" onChange={handleChange} value={state.name}/><br /><br />
         <label htmlFor="">Email:</label>
-        <input type="email" placeholder='enter your email' name='email' onChange={handleChange} value={state.value}/><br /><br />
+        <input type="email" placeholder='enter your email' name='email' onChange={handleChange} value={state.email}/><br /><br />
+        <label htmlFor="">Avurl:</label>
+        <input type="text" placeholder='enter your url' name='avatar' onChange={handleChange} value={state.avatar}/><br /><br />
         <button>Signup</button>
       </form>
     </div>

@@ -12,13 +12,14 @@ const User = () => {
     abc()
     },[])
   return (
-    <div>
+    <div className='mainuser'>
         { state && state.map((e,i)=>{
-            return <div key={e.id}>
-                <h1>{e.name}</h1>
+            return <div key={e.id} className='user'style={{animationDelay:`${i*0.1}s`}}>
+                <h5>{e.name}</h5>
                 <img src={e.avatar} alt="" />
+                
                 <button onDoubleClick={ async ()=>{
-                let myres=    axios.delete(`https://6a671da5189fe5869eb6ff31.mockapi.io/allusers/${e.id}`)
+                let myres  = axios.delete(`https://6a671da5189fe5869eb6ff31.mockapi.io/allusers/${e.id}`)
                 console.log(myres);
                 let updatstate=state.filter((x)=>{
                     if(x.id!=e.id){
