@@ -88,13 +88,6 @@ npm run build
 
 The production files will be generated inside the `dist` folder.
 
-## 📸 Screenshots
-
-Add your project screenshots here:
-
-```text
-![Home Page](./preview.png)
-```
 
 ## 🎯 Learning Outcomes
 
