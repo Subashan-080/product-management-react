@@ -73,6 +73,7 @@ header > ul > li{
     border-radius: 20px;
     transition: 0.3s ease;
     box-shadow: 0 0 10px rgba(216, 27, 120, 0.7), 0 0 30px rgba(216, 27, 120, 0.5), 0 0 60px rgba(216, 27, 120, 0.3); 
+    animation: singupdelay 0.6s ease forwards ;
     & label{
         font-family: 'Poppins', sans-serif;
         letter-spacing: 0.5px;
@@ -114,6 +115,20 @@ header > ul > li{
     }
     }
 
+}
+
+
+
+@keyframes singupdelay {
+    from{
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
 }
 
 /* user */
@@ -307,8 +322,23 @@ header > ul > li{
     box-sizing: border-box;
 }
 .home-content {
+    /* border:2px solid red; */
     max-width: 600px;
     color: white;
+    animation:contentdelay 0.6s ease forwards; 
+    opacity: 0;
+}
+@keyframes contentdelay {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    
 }
 
 .home-content h1 {
